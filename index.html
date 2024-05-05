@@ -10,19 +10,33 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="desktop">
             <ul>
-                <li class="active"><a href="">Sobre mim</a></li>
+                <li class="active"><a href="index.html">Sobre mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <nav class="mobile">
+            <details>
+                <summary>Menu</summary>
+                <ul>
+                    <li class="active"><a href="index.html">Sobre mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </details>
+        </nav>
     </header>
+    <div class="toggler-container" onclick="toggleDarkMode()">
+        <div class="dark-mode-item-toggler"></div>
+    </div>
     <main>
         <h1>Sobre mim</h1>
         <section>
-            <p>Olá, me chamo Luidson Lima Santos, tenho 24 anos e estou iniciando minha carreira na área de TI. Tenho interesse por desenvolvimento web e por ciência de dados</p>
+            <p>Olá, me chamo Luidson Lima Santos, tenho 24 anos e estou iniciando minha carreira na área de TI. Possuo interesse por desenvolvimento web e por ciência de dados</p>
             
             <h2>Hobbies</h2>
             <p>Meus hobbies incluem assistir animes, ouvir música, ler e jogar. Algumas das minhas preferências são:</p>

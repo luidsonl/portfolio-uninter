@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="desktop">
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
                 <li><a href="formacao.html">Formação</a></li>
@@ -17,8 +17,24 @@
                 <li class="active"><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <nav class="mobile">
+            <details>
+                <summary>Menu</summary>
+                <ul>
+                    <li><a href="index.html">Sobre mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li class="active"><a href="contato.html">Contato</a></li>
+                </ul>
+            </details>
+        </nav>
+        
     </header>
+    <div class="toggler-container" onclick="toggleDarkMode()">
+        <div class="dark-mode-item-toggler"></div>
+    </div>
     <main>
+        <h1>Contato</h1>
         <section>
             <form action="mailto:luidsonlsti@gmail.com" method="post" enctype="text/plain">
                 <label for="nome">Seu nome:</label>

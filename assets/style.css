@@ -1,0 +1,115 @@
+/*Zera a margem do body*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Define variáveis de cores*/
+:root{
+    /*header*/
+    --header-background: #333;
+    --header-background-link-hover-background: #555;
+    --header-link:#fff;
+    --header-link-active:#484;
+
+    /*conteúdo*/
+    --main-background:#fff;
+    --main-text-color: #000
+
+    /*dark mode toggler*/
+    --dark-mode-toggler-icon: url('sun-svgrepo-com.png'); 
+
+}
+
+
+
+/*Estilização da navbar*/
+/* Estilos para o header */
+header {
+    background-color: var(--header-background);
+    padding: 10px 0;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+nav.desktop ul {
+    flex-direction: row;
+}
+
+nav.mobile ul {
+    flex-direction: column;
+}
+
+
+nav ul li {
+    margin-right: 20px;
+    padding: 15px;
+    
+}
+
+nav ul li:hover {
+    background-color: var(--header-background-link-hover-background);
+}
+
+nav ul li a {
+    color: var(--header-link);
+    text-decoration: none;
+}
+nav ul li.active {
+    background-color: var(--header-link-active);
+}
+nav details summary{
+    padding: 20px;
+    color:var(--header-link);
+    cursor: pointer;
+    list-style: none;
+}
+nav details summary::-webkit-details-marker {
+    display: none;
+}
+nav details summary:hover{
+    background-color: var(--header-background-link-hover-background);
+}
+
+.toggler-container{
+    display: flex;
+    justify-content: end;
+}
+.toggler-container .dark-mode-item-toggler{
+    background-image: var(--dark-mode-toggler-icon);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    margin-right: 60px;
+    text-align: left;
+}
+/*Estilos para o conteúdo*/
+body{
+    background-color: var(--main-background);
+    color: var(--main-text-color);
+}
+h1{
+    text-align: center;
+}
+main{
+    margin: 20px;
+}
+
+
+/*Responsividade*/
+@media (max-width: 450px) {
+    .desktop{
+        display: none;
+    }
+}
+@media (min-width: 451px) {
+    .mobile{
+        display: none;
+        text-align: start;
+    }
+}
