@@ -14,7 +14,7 @@ body{
 
     /*conteúdo*/
     --main-background:#fff;
-    --main-text-color: #000
+    --main-text-color: #000;
 
     /*dark mode toggler*/
     --dark-mode-toggler-icon: url('sun-svgrepo-com.png'); 
@@ -75,19 +75,48 @@ nav details summary:hover{
     background-color: var(--header-background-link-hover-background);
 }
 
-.toggler-container{
+/*Dark mode*/
+.orbit-container{
     display: flex;
     justify-content: end;
 }
-.toggler-container .dark-mode-item-toggler{
+
+.orbit-container .orbit{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
+.orbit-container .orbit .dark-mode-item-toggler{
     background-image: var(--dark-mode-toggler-icon);
     background-size: contain;
     width: 40px;
     height: 40px;
     margin: 20px;
     margin-right: 60px;
-    text-align: left;
+    cursor: pointer;
+    z-index: 0;
 }
+
+.orbit-container .orbit .cloud{
+    background-image: url('cloud-svgrepo-com.png');
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    margin-right: 60px;
+    position: relative;
+    z-index: 1;
+    animation: cloud-wandering 10s infinite;
+}
+
+@keyframes cloud-wandering{
+    0% { right: 200px; }
+    50% { right: 0; }
+    100% { right: 200px; }
+
+}
+
 /*Estilos para o conteúdo*/
 body{
     background-color: var(--main-background);
@@ -98,6 +127,27 @@ h1{
 }
 main{
     margin: 20px;
+}
+.card-container{
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-container .card{
+    border: 1px solid var(--main-text-color);
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+
+.about-container .about{
+    max-width: 1000px;
 }
 
 
