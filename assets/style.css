@@ -2,6 +2,9 @@
 body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Define variáveis de cores*/
@@ -18,6 +21,7 @@ body{
 
     /*dark mode toggler*/
     --dark-mode-toggler-icon: url('sun-svgrepo-com.png'); 
+    --toggler-background: linear-gradient(to bottom, var(--main-background) 0%, #6fc0e8 50%, #6fc0ff 50%, #0000ff 100%);
 
 }
 
@@ -75,83 +79,7 @@ nav details summary:hover{
     background-color: var(--header-background-link-hover-background);
 }
 
-/*Dark mode*/
-.orbit-container{
-    display: flex;
-    justify-content: end;
-}
-
-.orbit-container .orbit{
-    display: flex;
-    justify-content: center;
-    width: 400px;
-}
-
-.orbit-container .orbit .dark-mode-item-toggler{
-    background-image: var(--dark-mode-toggler-icon);
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    margin: 20px;
-    margin-right: 60px;
-    cursor: pointer;
-    z-index: 0;
-}
-
-.orbit-container .orbit .cloud{
-    background-image: url('cloud-svgrepo-com.png');
-    background-size: contain;
-    width: 60px;
-    height: 60px;
-    margin: 20px;
-    margin-right: 60px;
-    position: relative;
-    z-index: 1;
-    animation: cloud-wandering 10s infinite;
-}
-
-@keyframes cloud-wandering{
-    0% { right: 200px; }
-    50% { right: 0; }
-    100% { right: 200px; }
-
-}
-
-/*Estilos para o conteúdo*/
-body{
-    background-color: var(--main-background);
-    color: var(--main-text-color);
-}
-h1{
-    text-align: center;
-}
-main{
-    margin: 20px;
-}
-.card-container{
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.card-container .card{
-    border: 1px solid var(--main-text-color);
-    width: 400px;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-}
-.about-container{
-    display: flex;
-    justify-content: center;
-}
-
-.about-container .about{
-    max-width: 1000px;
-}
-
-
-/*Responsividade*/
+/*Responsividade do menu*/
 @media (max-width: 450px) {
     .desktop{
         display: none;
@@ -162,4 +90,148 @@ main{
         display: none;
         text-align: start;
     }
+}
+
+
+/*Estilos para o conteúdo*/
+body{
+    background-color: var(--main-background);
+    color: var(--main-text-color);
+}
+main{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+.card-container .card{
+    border: 1px solid var(--main-text-color);
+    width: 40%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    max-width: 1000px;
+}
+a, a:hover a:visited{
+    color: var(--main-text-color);
+}
+
+.card ul li{
+    margin-bottom: .5em;
+}
+
+.card .image-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card .image-container img{
+    max-height: 400px;
+    max-width: 100%;
+}
+/*Responsividade do conteúdo*/
+@media (max-width: 450px) {
+    .card-container .card{
+        width: 80%;
+    }
+}
+
+/*Formulário*/
+form {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--main-background);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: var(--header-background);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--header-background-link-hover-background);
+}
+
+/*Rodapé*/
+
+/*Dark mode*/
+.toggler-container{
+    display: flex;
+    justify-content: end;
+    background: var(--toggler-background);
+}
+
+
+.toggler-container .dark-mode-item-toggler{
+    background-image: var(--dark-mode-toggler-icon);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    margin-right: 60px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.toggler-container .boat{
+    background-image: url('boat-toy-boat-svgrepo-com.png');
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+    animation: wandering 60s infinite;
+}
+
+@keyframes wandering{
+    0% { right: 0; }
+    100% { right: 100%; }
+
 }
