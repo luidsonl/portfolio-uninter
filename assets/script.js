@@ -16,8 +16,7 @@ const toggleDarkMode = () => {
     // Atualiza o estado do modo escuro no armazenamento local
     localStorage.setItem('darkMode', newDarkModeState);
 
-    // Aplica ou remove a classe 'dark-mode' no corpo da página conforme necessário
-    document.body.classList.toggle('dark-mode', newDarkModeState);
+    // Chama a função aplyDarkMode
     aplyDarkMode()
 };
 
