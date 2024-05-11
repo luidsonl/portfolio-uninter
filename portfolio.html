@@ -8,7 +8,9 @@
     <title>Portfólio</title>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
+        <!-- Navegação para desktop -->
         <nav class="desktop">
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
@@ -17,6 +19,7 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <!-- Navegação para dispositivos móveis -->
         <nav class="mobile">
             <details>
                 <summary>Menu</summary>
@@ -28,53 +31,70 @@
                 </ul>
             </details>
         </nav>
-        
     </header>
+    
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Título -->
         <h1>Portfólio</h1>
+        
+        <!-- Seção de cards -->
         <section class="card-container">
+            <!-- Card 1: OrganizAgro -->
             <div class="card">
                 <h2>OrganizAgro</h2>
-                <p>Aplicativo móvel que integra controle de estoque, controle financeiro e previsão do tempo</p>
-            
-                <p>Projeto desenvolvido durante a disciplina de Atividade Extensionista II da Uninter</p>
+                <p>Aplicativo móvel voltado para auxiliar pequenos agricultores, desenvolvido durante a disciplina de Atividade Extensionista II da Uninter</p>
                 <h3>Tecnologias utilizadas:</h3>
                 <ul>
                     <li>Flutter</li>
                 </ul>
+                <!-- Lista de funcionalidades -->
+                <h3>Funcionalidades</h3>
+                <ul>
+                    <li>Controle de estoque</li>
+                    <li>Controle financeiro</li>
+                    <li>Previsão do tempo</li>
+                </ul>
+                <!-- Link para o repositório no GitHub -->
                 <h3>Projeto</h3>
                 <ul>
                     <li><a href="https://github.com/luidsonl/organizagro/tree/8478825f72d6f645188f51942f9cbfe64e6b4d7f">Repositório do GitHub</a></li>
                 </ul>
-            
+                <!-- Imagens do aplicativo -->
                 <div class="image-container">
-                    <img src="assets/organizagro-print-1.png" alt="Tela do aplicativo">
-                    <img src="assets/organizagro-print-2.png" alt="Tela do aplicativo">
+                    <img src="assets/organizagro-print-1.png" title="Tela do aplicativo" alt="Tela do aplicativo">
+                    <img src="assets/organizagro-print-2.png" title="Tela do aplicativo" alt="Tela do aplicativo">
                 </div>
             </div>
+            <!-- Card 2: Scrapping simples com python -->
             <div class="card">
                 <h2>Scrapping simples com python</h2>
                 <p>Script simples que desenvolvi para verificar se sites possuem determinados elementos no seu html</p>
+                <!-- Descrição do funcionamento -->
                 <h3>Funcionamento</h3>
                 <ul>
                     <li>O programador insere um arquivo csv ou uma planilha com uma coluna contendo a url e outra com o trecho de html buscado</li>
-                    <li>Pode-se alterar definir os nomes das colunas modificando as constantes "URL_COLUMN" e "QUERY_COLUMN"</li>
+                    <li>Pode-se definir os nomes das colunas modificando as constantes "URL_COLUMN" e "QUERY_COLUMN"</li>
                     <li>O script retornará os logs com as informações sobre a busca e criará uma planilha nova na pasta "saida" com os resultados</li>
                 </ul>
+                <!-- Ferramentas utilizadas -->
                 <h3>Ferramentas utilizadas:</h3>
                 <ul>
                     <li>Python</li>
                     <li>Biblioteca pandas</li>
                     <li>Biblioteca requests</li>
                 </ul>
+                <!-- Link para o repositório no GitHub -->
                 <h3>Projeto</h3>
                 <ul>
                     <li><a href="https://github.com/luidsonl/Exercicios-Libs-Python/tree/main/Scraping">Repositório do GitHub</a></li>
                 </ul>
             </div>
+            <!-- Card 3: Supports -->
             <div class="card">
                 <h2>Supports</h2>
                 <p>Fórum de dúvidas simples</p>
+                <!-- Ferramentas utilizadas -->
                 <h3>Ferramentas utilizadas:</h3>
                 <ul>
                     <li>Laravel</li>
@@ -82,6 +102,7 @@
                     <li>PHP</li>
                     <li>MySQL</li>
                 </ul>
+                <!-- Lista de funcionalidades -->
                 <h3>Funcionalidades:</h3>
                 <ul>
                     <li>Cadastrar novo usuário e fazer login</li>
@@ -90,39 +111,47 @@
                     <li>Visualizar todas as dúvidas do fórum</li>
                     <li>Visualizar todas as dúvidas que o próprio usuário postou</li>
                 </ul>
+                <!-- Link para o repositório no GitHub -->
                 <h3>Projeto</h3>
                 <ul>
                     <li><a href="https://github.com/luidsonl/Forum-Laravel/tree/main">Repositório do GitHub</a></li>
                 </ul>
             </div>
+            <!-- Card 4: App de orçamento pessoal -->
             <div class="card">
                 <h2>App de orçamento pessoal</h2>
                 <p>Aplicação web simples para registro de entrada e saída de capital</p>
+                <!-- Tecnologias utilizadas -->
                 <h3>Tecnologias utilizadas</h3>
                 <ul>
                     <li>HTML</li>
                     <li>Bootstrap</li>
                     <li>JavaScript</li>
                 </ul>
+                <!-- Link para o repositório no GitHub e demonstração -->
                 <h3>Projeto</h3>
                 <ul>
                     <li><a href="https://github.com/luidsonl/Curso-Desenvolvimento-Web-Completo/tree/main/Projeto-11-App-Or%C3%A7amento-Pessoal">Repositório do GitHub</a></li>
                     <li><a href="https://chic-belekoy-fcabd8.netlify.app/">Demonstração</a></li>
                 </ul>
+                <!-- Imagem da aplicação -->
                 <div class="image-container">
-                    <img src="assets/orcamento-pessoal-print-1.png" alt="Tela do aplicativo">
+                    <img src="assets/orcamento-pessoal-print-1.png" title="Tela do aplicativo" alt="Tela do aplicativo">
                 </div>
             </div>
         </section>
         
     </main>
+    <!-- Rodapé -->
     <footer>
+        <!-- Botão para alternar o modo escuro -->
         <div class="toggler-container">
             <div class="dark-mode-item-toggler" onclick="toggleDarkMode()"></div>
             <div class="boat"></div>
         </div>
     </footer>
     
+    <!-- Script -->
     <script src="assets/script.js"></script>
 </body>
 </html>

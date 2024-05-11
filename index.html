@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="robots" content="noindex, nofollow"> <!-- Meta tag para orientar robôs de busca -->
+    <link rel="stylesheet" href="assets/style.css"> <!-- Link para o arquivo CSS -->
     <title>Sobre mim</title>
 </head>
 <body>
 
     <header>
+        <!-- Navegação para desktop -->
         <nav class="desktop">
             <ul>
                 <li class="active"><a href="index.html">Sobre mim</a></li>
@@ -18,6 +19,7 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <!-- Navegação para dispositivos móveis -->
         <nav class="mobile">
             <details>
                 <summary>Menu</summary>
@@ -31,29 +33,28 @@
         </nav>
     </header>
 
-
-
     <main>
         <h1>Sobre mim</h1>
 
         <section class="about">
-            <p>Olá, me chamo Luidson Lima Santos, tenho 24 anos, sou da cidade de Ipirá no estado da Bahia e estou iniciando minha carreira na área de TI.</p>
+            <!-- Informações sobre mim -->
+            <p>Olá, me chamo <b>Luidson Lima Santos</b>, tenho 24 anos, sou da cidade de Ipirá no estado da Bahia e estou iniciando minha carreira na área de TI.</p>
             <p>Possuo interesse por desenvolvimento web e por ciência de dados.</p>
         
             <h2>Hobbies</h2>
+            <!-- Lista de hobbies -->
             <p>Meus hobbies incluem assistir animes, ouvir música, ler e jogar.</p>
             <p>Algumas das minhas preferências são:</p>
         </section>
             
         <section class="card-container">
+            <!-- Cartões para mostrar preferências -->
             <div class="card">
                 <h3>Animes</h3>
                 <ul>
                     <li>Death Note</li>
                     <li>Monster</li>
-                    <li>Naruto</li>
                     <li>Os Cavaleiros do Zodíaco</li>
-                    <li>Jojo's Bizarre Adventure</li>
                 </ul>
             </div>
             <div class="card">
@@ -62,7 +63,6 @@
                     <li>ANGRA</li>
                     <li>Iron Maiden</li>
                     <li>Van Halen</li>
-                    <li>Helloween</li>
                 </ul>
             </div>
             <div class="card">
@@ -70,8 +70,7 @@
                 <ul>
                     <li>Minecraft</li>
                     <li>GTA San Andreas</li>
-                    <li>Zelda Ocarina of Time</li>
-                    <li>OpenTTD</li>
+                    <li>The Legend of Zelda: Ocarina of Time</li>
                 </ul>
             </div>
             <div class="card">
@@ -82,17 +81,17 @@
                     <li>O Homem Mais Rico da Babilônia</li>
                 </ul>
             </div>
-
-
         </section>
     </main>
+    
     <footer>
+        <!-- Botão para alternar o modo escuro -->
         <div class="toggler-container">
             <div class="dark-mode-item-toggler" onclick="toggleDarkMode()"></div>
             <div class="boat"></div>
         </div>
     </footer>
     
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
 </html>

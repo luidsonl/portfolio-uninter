@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="robots" content="noindex, nofollow"> <!-- Meta tag para orientar robôs de busca -->
+    <link rel="stylesheet" href="assets/style.css"> <!-- Link para o arquivo CSS -->
     <title>Minha Formação</title>
 </head>
 <body>
     <header>
+        <!-- Navegação para desktop -->
         <nav class="desktop">
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
@@ -17,6 +18,7 @@
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+        <!-- Navegação para dispositivos móveis -->
         <nav class="mobile">
             <details>
                 <summary>Menu</summary>
@@ -28,48 +30,66 @@
                 </ul>
             </details>
         </nav>
-        
     </header>
+    
     <main>
+        <!-- Seção principal -->
         <h1>Minha formação</h1>
+        <!-- Container de cartões -->
         <section class="card-container">
+            <!-- Cartão de Formação Acadêmica -->
             <div class="card">
                 <h2>Formação acadêmica</h2>
+                <!-- Lista de instituições e cursos -->
+                <h3>UNINTER</h3>
                 <ul>
-                    <li>UNINTER</li>
+                    <li>Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
+                    <li>2022-2024</li>
+                </ul>
+                <h3>XP Educação</h3>
+                <ul>
+                    <li>Bacharelado em Ciência de Dados</li>
+                    <li>2022-2026</li>
+                </ul>
+                <h3>Universidade Estadual de Feira de Santana</h3>
+                <ul>
+                    <li>Bacharelado em Odontologia</li>
+                    <li>2018-2022</li>
+                    <li>Incompleto</li>
+                </ul>
+            </div>
+            <!-- Cartão de Experiência Profissional -->
+            <div class="card">
+                <h2>Experiência profissional</h2>
+                <!-- Lista de experiências profissionais -->
+                <h3>Kyraly | Beyond Marketing</h3>
+                <ul>
+                    <li>Estrategista I - TI (SEO)</li>
                     <ul>
-                        <li>Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
-                        <li>2022-2024</li>
+                        <li>Estágio</li>
+                        <li><small>Jul/2023 - Abr/2024</small></li>
                     </ul>
-                    <li>XP Educação</li>
+                    <li>Estrategista II - TI (SEO)</li>
                     <ul>
-                        <li>Bacharelado em Ciência de Dados</li>
-                        <li>2022-2026</li>
-                    </ul>
-                    <li>Universidade Estadual de Feira de Santana</li>
-                    <ul>
-                        <li>Bacharelado em Odontologia</li>
-                        <li>2018-2022</li>
-                        <li>Incompleto</li>
+                        <li>Estágio</li>
+                        <li><small>Abr/2024 - Atualmente</small></li>
                     </ul>
                 </ul>
             </div>
+            <!-- Cartão de Cursos Livres -->
             <div class="card">
                 <h2>Cursos livres</h2>
+                <!-- Lista de cursos com links -->
                 <ul>
-                    <li>
-                        <a href="https://www.udemy.com/certificate/UC-b33e5ee6-d062-416a-9fae-206bb1fb1e73/">Desenvolvimento Web Completo - 20 cursos + 20 projetos</a>
-                    </li>
-                    <li>
-                        <a href="https://hermes.digitalinnovation.one/certificates/434DD77F.pdf">Impulso Javascript Evolution</a>
-                    </li>
-                    <li>
-                        <a href="https://www.freecodecamp.org/certification/luidsonl/javascript-algorithms-and-data-structures">Legacy JavaScript Algorithms and Data Structures Certification</a>
-                    </li>
+                    <li><a href="https://www.udemy.com/certificate/UC-b33e5ee6-d062-416a-9fae-206bb1fb1e73/">Desenvolvimento Web Completo - 20 cursos + 20 projetos</a></li>
+                    <li><a href="https://hermes.digitalinnovation.one/certificates/434DD77F.pdf">Impulso Javascript Evolution</a></li>
+                    <li><a href="https://www.freecodecamp.org/certification/luidsonl/javascript-algorithms-and-data-structures">Legacy JavaScript Algorithms and Data Structures Certification</a></li>
                 </ul>
             </div>
+            <!-- Cartão de Conhecimentos Técnicos -->
             <div class="card">
                 <h2>Conhecimentos técnicos</h2>
+                <!-- Lista de habilidades técnicas -->
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
@@ -95,34 +115,36 @@
                     <li>MongoDB</li>
                     <li>Linux</li>
                     <li>Docker</li>
-        
+                    <li>Shopify</li>
                 </ul>
             </div>
+            <!-- Cartão de Idiomas -->
             <div class="card">
                 <h2>Idiomas</h2>
+                <!-- Lista de habilidades linguísticas -->
+                <h3>Potuguês</h3>
                 <ul>
-                    <li>Potuguês</li>
-                    <ul>
-                        <li>Falante nativo</li>
-                    </ul>
-                    <li>Inglês</li>
-                    <ul>
-                        <li>Capacidade de compreender escrita</li>
-                        <li>Capacidade de compreender fala</li>
-                        <li>Capacidade rasoável se expressar via escrita</li>
-                        <li>Capacidade rasoável de se expressar via fala</li>
-                    </ul>
+                    <li>Falante nativo</li>
+                </ul>
+                <h3>Inglês</h3>
+                <ul>
+                    <li>Capacidade de compreender escrita</li>
+                    <li>Capacidade de compreender fala</li>
+                    <li>Capacidade razoável de se expressar via escrita</li>
+                    <li>Capacidade razoável de se expressar via fala</li>
                 </ul>
             </div>
         </section>
     </main>
+    
     <footer>
+        <!-- Botão para alternar o modo escuro -->
         <div class="toggler-container">
             <div class="dark-mode-item-toggler" onclick="toggleDarkMode()"></div>
             <div class="boat"></div>
         </div>
     </footer>
     
-    <script src="assets/script.js"></script>
+    <script src="assets/script.js"></script> <!-- Link para o arquivo JavaScript -->
 </body>
 </html>
